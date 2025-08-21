@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    background-color: #e2fcd4;
+    color: black;
+    font-size: 16px;
+    font-family: Roboto;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+
+header{
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 8%;
+}
+
+.logo{
+    width: 150px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+li{
+    list-style: none;
+}
+
+Nav li{
+    display: inline-block;
+    padding: 10px 10px;
+    margin-top: 12px;
+    word-spacing: 10px;
+    padding: 0 20px;
+}
+
+Nav li a{
+    font-size: 18px;
+    position: relative;
+}
+
+Nav li a:hover{
+    color: rgba(91,175,35,255);
+    text-decoration: none; 
+}
+
+
+Nav li a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px; /* to ajust space between text and underline */
+    width: 100%; 
+    height: 3px; /* width of undeline */
+    background-color:  #54ad1d; 
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease-in-out 0.3;
+
+}
+
+Nav li a:hover::after {
+    transform: scaleX(1); /* expand underline */
+    transform-origin: left;
+}
+
+button{
+    background-color: rgba(33,24,19,255);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border-style: solid;
+    margin-top: 12px;
+    transition: opacity 0.2s;
+    cursor: pointer;
+}
+
+button:hover{
+    opacity: 0.9;
+}

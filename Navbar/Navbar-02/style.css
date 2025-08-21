@@ -12,7 +12,7 @@
 }
 
 .logo{
-    width: 60px;
+    width: 64px;
     cursor: pointer;
 }
 
@@ -25,7 +25,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 8px 8%;
-    height: 70px;
+    height: 50px;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 2px 10px rgba(0,0,0,0.2);
 }
@@ -33,9 +33,9 @@ header{
 
 
 .Logo-terms{
-    display: inline-block;
-    width: 130px;
-    vertical-align: center;
+    
+    width: 140px;
+    
 }
 
 Nav{
@@ -44,13 +44,30 @@ Nav{
 
 Nav li{
     display: inline-block;
-    padding: 0px 14px;
-    margin-left: 8px;
+    padding: 0px 20px;
+}
+
+Nav li a{
+    margin: 0;
+}
+
+
+
+Nav li a:active{
+    color: white;
+    background-color: rgb(89, 38, 209);
+    padding: 5px 12px;
+
 }
 
 Nav li a:hover{
-    color: rgb(89, 38, 209);
+    color: white;
+    background-color: rgb(89, 38, 209);
+    padding: 10px 10px;
+    border-radius: 10px;
+    display: flex;
 }
+
 
 .Buttons_div{
     width: 200px;
@@ -59,18 +76,16 @@ Nav li a:hover{
     
 }
 
-.Signin{
-    padding: 10px 16px;
-    border: none;
-}
 
-.Signin:hover{
-    padding: 8px 15px;
+
+.Signin{
+    padding: 10px 15px;
     border-color: rgb(76, 0, 255);
-     border-radius: 10px;
-    color: rgb(0, 0, 0);
+    color: rgb(89, 38, 209);
+    border-radius: 10px;
     border-style: solid;
     border-width: 1px;
+    cursor: pointer;
 }
 
 .Signup{
@@ -79,10 +94,15 @@ Nav li a:hover{
     background-color: rgb(89, 38, 209);
     color: white;
     border-style: none;
+    cursor: pointer;
 }
 
 .Logo_text{
     display: inline-block;
-    text-align: center;
-    
+    vertical-align: top;
+    margin-top: 28px;
+    font-weight: 700;
+    font-size: 18px;
+    font-family: "Roboto";
+    color:rgb(89, 38, 209);
 }
