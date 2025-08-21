@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-family: "Roboto";
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    
+}
+
+.logo{
+    width: 60px;
+    cursor: pointer;
+}
+
+li{
+    list-style: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 8%;
+    height: 70px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.2);
+}
+
+
+
+.Logo-terms{
+    display: inline-block;
+    width: 130px;
+    vertical-align: center;
+}
+
+Nav{
+    cursor: Pointer;
+}
+
+Nav li{
+    display: inline-block;
+    padding: 0px 14px;
+    margin-left: 8px;
+}
+
+Nav li a:hover{
+    color: rgb(89, 38, 209);
+}
+
+.Buttons_div{
+    width: 200px;
+    display: inline-block;
+    margin-left: 10px;
+    
+}
+
+.Signin{
+    padding: 10px 16px;
+    border: none;
+}
+
+.Signin:hover{
+    padding: 8px 15px;
+    border-color: rgb(76, 0, 255);
+     border-radius: 10px;
+    color: rgb(0, 0, 0);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.Signup{
+    padding: 10px 16px;
+    border-radius: 10px;
+    background-color: rgb(89, 38, 209);
+    color: white;
+    border-style: none;
+}
+
+.Logo_text{
+    display: inline-block;
+    text-align: center;
+    
+}
