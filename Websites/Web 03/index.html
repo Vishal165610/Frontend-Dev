@@ -76,29 +76,30 @@
             margin-right: 130px
         }
 
-        .form{
+        .form {
             display: none;
         }
 
-        #signin{
+        #signup {
             display: block;
         }
 
-        #signup:target{
+        #signin:target {
             display: block;
         }
 
-        #signup:target ~ #signin{
+        #signin:target ~ #signup {
             display: none;
         }
 
-        #signup:target{
+        #signup:target {
             display: block;
         }
 
-        #signin:target ~ #signup{
+        #signup:target ~ #signin {
             display: none;
         }
+
 
         
         .Sign-in, .Sign-up{
@@ -324,98 +325,91 @@
 
     <div class="container">
 
-        <div class="form" id="signup">
+    <div class="form" id="signin">
 
-            <div class="heading">
-                <i class="fa-solid fa-arrow-left"></i>
-                <p class="Already-memeber">Already a member? <a class="Sign-in" href="#signin">Sign in</a></p>
-            </div>
-
-            <p class="Form-title">Sign Up</p>
-            <p class="Form-message">Secure Your Communications with EasyMail</p>
-            
-
-            <div class="Infos">
-
-            <div class="First-info">
-                <i class="fa-solid fa-user"></i>
-                <input class="username" type="text" placeholder="Username" id="signup-username">
-            </div>
-
-            <div class="Second-info">
-                <i class="fa-solid fa-envelope"></i>
-                <input class="email" type="text" placeholder="Email" id="signup-email">
-            </div>
-
-            <div class="Third-info">
-                <i class="fa-solid fa-key"></i>
-                <input class="password" type="password" placeholder="Password" id="signup-password">
-            </div>
-
-            <div class="Fourth-info">
-                <i class="fa-solid fa-key"></i>
-                <input class="c-password" type="password" placeholder="Confirm Password" id="signup-cpassword">
-            </div>
-
-            </div>
-
-            <div class="Last-content">
-
-                <input class="checkbox" type="checkbox"><p class="TandC">I agree to the <a href="#">terms and conditions</a></p>
-
-            </div>
-
-            <div class="last-content">
-                <button class="Signup" id="btnSignup">Sign Up <i class="fa-solid fa-arrow-right"></i></button>
-                <p class="or">or</p>
-                <img class="google" src="google.png" alt="">
-                <img class="facebook" src="facebook.png" alt="">
-            </div>
-            
+        <div class="heading">
+            <i class="fa-solid fa-arrow-left"></i>
+            <p class="Dont-have">Don't have an account? <a class="Sign-up" href="#signup">Sign Up</a></p>
         </div>
 
+        <p class="Form-title">Sign in</p>
+        <p class="Form-message">Welcome back to EasyMail</p>
 
-        <div class="form" id="signin">
+        <div class="Infos">
 
-            <div class="heading">
-                <i class="fa-solid fa-arrow-left"></i>
-                <p class="Dont-have">Don't have an account? <a class="Sign-up" href="#signup">Sign Up</a></p>
-            </div>
+        <div class="Second-info">
+            <i class="fa-solid fa-envelope"></i>
+            <input class="email" type="text" placeholder="Email" id="signin-email">
+        </div>
 
-            <p class="Form-title">Sign in</p>
-            <p class="Form-message">Welcome back to EasyMail</p>
+        <div class="Third-info">
+            <i class="fa-solid fa-key"></i>
+            <input class="password" type="password" placeholder="Password" id="signin-password">
+        </div>
 
-            <div class="Infos">
+        </div>
 
-            <div class="Second-info">
-                <i class="fa-solid fa-envelope"></i>
-                <input class="email" type="text" placeholder="Email" id="signin-email">
-            </div>
+        <div class="Last-content">
+            <input style="display: inline-block;" type="checkbox"><p class="TandC">Remember me</p>
+        </div>
 
-            <div class="Third-info">
-                <i class="fa-solid fa-key"></i>
-                <input class="password" type="password" placeholder="Password" id="signin-password">
-            </div>
-
-            </div>
-
-            <div class="Last-content">
-
-                <input style="display: inline-block;" type="checkbox"><p class="TandC">Remember me</p>
-
-            </div>
-
-             <div class="last-content">
-                <button class="Signup" id="btnSignin">Sign In <i class="fa-solid fa-arrow-right"></i></button>
-                <p class="or">or</p>
-                <img class="google" src="google.png" alt="">
-                <img class="facebook" src="facebook.png" alt="">
-            </div>
-
-            
+         <div class="last-content">
+            <button class="Signup" id="btnSignin">Sign In <i class="fa-solid fa-arrow-right"></i></button>
+            <p class="or">or</p>
+            <img class="google" src="google.png" alt="">
+            <img class="facebook" src="facebook.png" alt="">
         </div>
 
     </div>
+
+    <div class="form" id="signup">
+
+        <div class="heading">
+            <i class="fa-solid fa-arrow-left"></i>
+            <p class="Already-memeber">Already a member? <a class="Sign-in" href="#signin">Sign in</a></p>
+        </div>
+
+        <p class="Form-title">Sign Up</p>
+        <p class="Form-message">Secure Your Communications with EasyMail</p>
+        
+        <div class="Infos">
+
+        <div class="First-info">
+            <i class="fa-solid fa-user"></i>
+            <input class="username" type="text" placeholder="Username" id="signup-username">
+        </div>
+
+        <div class="Second-info">
+            <i class="fa-solid fa-envelope"></i>
+            <input class="email" type="text" placeholder="Email" id="signup-email">
+        </div>
+
+        <div class="Third-info">
+            <i class="fa-solid fa-key"></i>
+            <input class="password" type="password" placeholder="Password" id="signup-password">
+        </div>
+
+        <div class="Fourth-info">
+            <i class="fa-solid fa-key"></i>
+            <input class="c-password" type="password" placeholder="Confirm Password" id="signup-cpassword">
+        </div>
+
+        </div>
+
+        <div class="Last-content">
+            <input class="checkbox" type="checkbox"><p class="TandC">I agree to the <a href="#">terms and conditions</a></p>
+        </div>
+
+        <div class="last-content">
+            <button class="Signup" id="btnSignup">Sign Up <i class="fa-solid fa-arrow-right"></i></button>
+            <p class="or">or</p>
+            <img class="google" src="google.png" alt="">
+            <img class="facebook" src="facebook.png" alt="">
+        </div>
+        
+    </div>
+
+</div>
     </div>
 
 </body>
