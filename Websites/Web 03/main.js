@@ -9,6 +9,21 @@
 // 3) Put your Firebase project config below (from Firebase Console > Project settings > General > Your apps)
 // 4) In Firebase Console: enable Authentication (Email/Password) and create a Firestore database (test mode is fine for dev).
 
+
+// Get the sign-in and sign-up buttons by their IDs
+const signinButton = document.getElementById('btnSignin');
+const signupButton = document.getElementById('btnSignup');
+
+// Add a click event listener to the Sign In button
+signinButton.addEventListener('click', () => {
+    window.location.href = 'https://www.youtube.com';
+});
+
+// Add a click event listener to the Sign Up button
+signupButton.addEventListener('click', () => {
+    window.location.href = 'https://www.youtube.com';
+});
+
 // --- 0) Firebase SDK imports (browser ESM) ---
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js';
 import {
