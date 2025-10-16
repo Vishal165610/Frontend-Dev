@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafeteria - Website</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+
+        body{
+            display: flex;
+            align-content: center;
+            flex-direction: column;
+            text-align: center;
+            margin: 0;
+            overflow-x: hidden; 
+            padding: 0;
+        }
+        .Bg{
+            position: absolute;
+            z-index: -1;
+            width: 100%;
+            max-height: 730px;
+            margin-top: 0;
+            padding-top: 0;
+            border-width: 10px;
+            border-style: solid;
+            border-color: #c19d6f;
+            box-sizing: border-box;
+            left: -1px;
+            top: -1px;
+        }
+
+        .W{
+            padding-top: 0;
+            margin: 0;
+            font-size: 55px;
+            position: relative;
+            top: -10px;
+            left: 100px;
+            color: white;
+        }
+
+        .other{
+            padding-top: 0;
+            margin: 0;
+            font-size: 35px;
+            position: relative;
+            color: white;
+            left: -05px;
+        }
+        
+        .restaurant-1{
+            padding-top: 0;
+            margin: 0;
+            font-family: "montserrat", sans-serif;
+            font-size: 8px;
+            position: relative;
+            color: white;
+            left: -190px;
+            top: 40px;
+            letter-spacing: 5px;
+        }
+
+        header{
+            display: flex;
+            justify-content: space-between;
+            margin: 0;
+            padding: 20px 100px;
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            font-size: 30px;
+           
+        }
+
+        .nav-links{
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            margin-top: 18px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 17px;
+            position: relative;
+            left: -140px;
+        }
+
+         .nav-links li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav-links li a:hover{
+            color: #c19d6f;
+            text-decoration: none;
+            transition: all 0.3s ease 0s;
+        }
+
+        .social-icons{
+            color: white;
+            margin-top: 6px;
+            position: relative;
+            left: -100px;
+        }
+       
+        .social-icons img{
+            width: 18px;
+            margin-left: 13px;
+        }
+
+        .home{
+            color: #c19d6f;
+        }
+
+        .main{
+            color: White;
+           
+        }
+
+        .slogan{
+            font-family: 'Roboto', serif;
+            font-weight: 300;
+            font-size: 16px;
+            margin-top: 60px;
+            margin-bottom: 10px;
+            letter-spacing: 5px;
+            
+        }
+
+        .sub-slogan{
+            font-family: 'Roboto', serif;
+            font-weight: 700;
+            font-size: 95px;
+            width: 600px;
+            margin-top: 0;
+            margin-bottom: 10px;
+            position: relative;
+            left: 450px;
+            max-width: 90%;
+            margin: 0 auto;
+            left: 0;
+            line-height: 1;
+        }
+
+        .para{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            width: 550px;
+            margin: auto;
+            margin-top: 0;
+            margin-bottom: 30px;
+            position: relative;
+            line-height: 2;
+        }
+
+        .menu{
+            background-color: #c19d6f;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 16px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease 0s;
+        }
+
+        .menu:hover{
+            background-color: white;
+            color: #c19d6f;
+            border: 2px solid #c19d6f;
+            transition: all 0.3s ease 0s;
+        }
+
+        .Page-2{
+            width: 100%;
+            height: 780px;
+            position: relative;
+            top: -210px;
+            box-sizing: border-box;
+            background-color: #0b1517;
+            margin: 0;
+            padding: 0; 
+            position: relative;
+            z-index: 1;
+        }
+
+        .leaf-1 {
+            width: 350px;
+            position: absolute; 
+            right: -30px;           
+            top: 470px;         
+            z-index: 2;
+            max-width: 40%;     
+        }
+
+        .leaf-2{
+            width: 350px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .restaurant{
+            width: 400px;
+            margin: 0;
+            position: relative;
+            left: -380px;
+            top: 100px;
+        }
+
+        .divider{
+            width: 400px;
+            margin-top: 20px;
+            position: relative;
+            top: -250px;
+            z-index: -1;
+            left: 25px;
+        }
+
+        .occasion{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 12px;
+            color: white;
+            margin: 0;
+            position: relative;
+            top: -380px;
+            left: 100px;
+            letter-spacing: 5px;
+        }
+
+        .occasion-title{
+            font-family: 'Montserrat', serif;
+            font-weight: 400;
+            font-size: 35px;
+            text-align: left;
+            color: #c19d6f;
+            width: 600px;
+            margin: 0;
+            position: relative;
+            top: -350px;
+            left: 650px;
+            line-height: 1.2;
+            word-spacing: 10px;
+        }
+
+        .Page-3{
+            width: 100%;
+            height: 780px;
+            position: relative;
+            top: -210px;
+            box-sizing: border-box;
+            background-color: #0b1517;
+            margin: 0;
+            padding: 0; 
+            position: relative;
+            z-index: 1;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .page2-1st{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 12px;
+            color: #c19d6f;
+            margin: 0;
+            position: relative;
+            top: -180px;
+            letter-spacing: 2px;
+        }
+
+        .page2-2nd{
+            font-family: 'Montserrat', serif;
+            font-weight: 700;
+            font-size: 45px;
+            text-align: left;
+            color: white;
+            width: 400px;
+            text-align: center;
+            margin: 0;
+            position: relative;
+            top: -170px;
+            line-height: 1.2;
+            left: 100px;
+            word-spacing: 10px;
+        }
+
+        .page2-3rd{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 15px;
+            color: white;
+            width: 600px;
+            text-align: center;
+            margin: 0;
+            position: relative;
+            top: -160px;
+            line-height: 2;
+        }
+
+        .leaf-3{
+            width: 500px;
+            position: relative;
+            top: -100px;
+            z-index: 1;
+            right: -300px;
+        }
+
+        .menus{
+            background-color: #c19d6f;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 16px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease 0s;
+            position: relative;
+            top: -140px;
+        }
+
+        .menus:hover{
+            background-color: white;
+            color: #c19d6f;
+            border: 2px solid #c19d6f;
+            transition: all 0.3s ease 0s;
+        }
+
+        .food-bowl{
+            position: relative;
+            z-index: 3;
+            right: 180px;
+            width: 400px;
+            top: -18px;
+        }
+
+        .text-content{
+            position: relative;
+            z-index: 3;
+            left: 100px;
+        }
+
+        .food{
+            position: relative;
+            z-index: 4;
+            width: 450px;
+           
+            top: -450px;
+            left: 115px;
+        }
+
+        .thread{
+            width: 300px;
+            position: relative;
+            top: -750px;
+            left: 445px;
+            z-index: 3;
+        }
+
+        .Page-4{
+            background-color: #0b1517;
+            margin: 0;
+            position: relative;
+            top: -650px;
+        }
+
+        .make-food{
+            color: white;
+            font-family: "montserrat";
+            top: 100px;
+            position: relative;
+        }
+
+
+        
+
+        
+    </style>   
+
+</head>
+<body>
+
+    <img class="Bg" src="Assets/Asset-1.png" alt="">
+    
+    <header>
+        <h1 class="W">W</h1><h1 class="other">ilma</h1> 
+        <p class="restaurant-1">RESTAURANT</p>
+        <nav>
+            <ul class="nav-links">
+                <li><a style="color: #c19d6f;" href="#Home">Home <i class="fa-solid fa-chevron-down"></i></a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#ourmenu">Our Menu</a></li>
+                <li><a href="#resercation">Reservation</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="social-icons">
+            <img src="Assets/facebook.png" alt="">
+            <img src="Assets/instagram.png" alt="">
+            <img src="Assets/discord.png" alt="">
+        </div>
+
+    </header>
+
+
+
+    <div class="main">
+        <p class="slogan">MORE FLAVOR FOR LESS</p>
+        <p class="sub-slogan">Taste The Difference</p>
+        <p class="para">When the going gets tough, the tough get grilling, Bringing heat to your meal. No one can compete with our meal</p>
+        <button class="menu">Our Menu</button>
+    </div>
+    
+    <img class="leaf-2" src="Assets/leaf-2.png" alt="">
+    <img class="leaf-1" src="Assets/leaf-R.webp" alt="">
+
+    <div class="Page-2">
+
+        <div>
+            <img class="restaurant" src="Assets/restraunt.jpeg" alt="">
+        </div>
+        <div>
+            <p class="occasion">YOUR SPECIAL OCCASION DESTINATION</p>
+            <p class="occasion-title">The Wilmia is a premium taste that yearns to be savoured, ground beef between your teeth</p>
+            <img class="divider" src="Assets/divider.png" alt="">
+        </div>
+
+    </div>
+
+     <div class="Page-3">
+
+
+         <div class="text-content">
+            <p class="page2-1st">DELIGHT IN EVERY BITE</p>
+            <p class="page2-2nd">Our Chief Recommend</p>
+            <p class="page2-3rd">Exercitation photo booth stumpdown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan Exercitation</p>
+            <button class="menus">View Menu</button>
+        </div>
+
+        <img class="leaf-3" src="Assets/leaf-3.png" alt="">
+        <img class="food-bowl" src="Assets/food-bowl.png" alt="">
+        
+
+    </div>
+
+    <img class="food" src="Assets/food.png" alt="food">
+    <img class="thread" src="Assets/divider - Copy.png" alt="">
+
+    <div class="Page-4">
+
+        <p class="make-food">MAKE FOOD, NOT WAR</p>
+        <img class="header-lines" src="Assets/divider - Copy.png" alt=""><p class="Our-menus">Our Menus</p><img class="header-lines" src="Assets/divider - Copy.png" alt="">
+
+        <div>
+        <p>Starters</p>
+        <div class="Menu">
+
+            <div class="Menu-mini">
+            <p class="item-name">Salted Fried Chicken</p>
+            <p class="item-subname">Chicken / Olive Oil / Salt</p>
+            </div>
+            <p class="item-price">$20.0</p>
+
+            <div class="Menu-mini">
+            <p class="item-name">Crab With Curry Sources</p>
+            <p class="item-subname">Crab / Potatoes / Rice</p>
+            </div>
+            <p class="item-price">$24.5</p>
+
+            <div class="Menu-mini">
+            <p class="item-name">Imported Salmon Steak</p>
+            <p class="item-subname">Salmon / Veggies / Oil</p>
+            </div>
+            <p class="item-price">$18.9</p>
+
+            <div class="Special-Menu-mini">
+            <p class="New-item">New</p>
+            <p class="Special-item-name">Salted Fried Chicken</p>
+            <p class="Special-item-subname">Chicken / Olive Oil / Salt</p>
+            </div>
+            <p class="Special-item-price">$12.0</p>
+
+        </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

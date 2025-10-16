@@ -1,0 +1,28 @@
+<button class="buttonmain" id="buttonmain"></button>
+<button class="get-it" id="get-it">Get it</button>
+
+<button class="get-start" id="get-start">Get Started</button>
+
+<button onclick="sayhello()">Hello</button>
+<script>
+    const buttonmain = document.getElementById('buttonmain');
+    buttonmain.addEventListener('click',() => {
+        window.location.href = 'main.js'
+    });
+
+    function sayhello(){
+        alert('Hello Candidate')
+    }
+
+    const getit = document.getElementById('get-it');
+    getit.addEventListener('click',() => {
+        window.location.href = 'main.js'
+    });
+
+    const getstart = document.getElementById('get-start');
+    getstart.addEventListener('click',() => {
+        alert("hello world")
+    });
+
+
+</script>
