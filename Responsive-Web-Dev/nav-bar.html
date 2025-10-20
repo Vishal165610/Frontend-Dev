@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Responsive Navbar</title>
+
+    <style>
+
+        
+
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            color: black;
+            background-color: gray;
+            margin-top: 0;
+        }
+
+        .logo{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo h4{
+            font-size: 20px;
+            font-weight: 600;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .logo img{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .nav-links{
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .nav-links h4{
+            font-size: 20px;
+            font-weight: 600;
+            cursor: pointer;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .nav-links h5{
+            display: none;
+            font-size: 25px;
+            cursor: pointer;
+        }
+
+        @media (max-width: 700px){
+            .nav-links h5{
+                display: block;
+            }
+
+            .nav-links h4{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="google.png" alt="">
+            <h4>Google</h4>
+        </div>
+        <div class="nav-links">
+            <h4>Home</h4>
+            <h4>Search</h4>
+            <h4>DevFest</h4>
+            <h4>GDG</h4>
+            <h4>Need Help?</h4>
+            <h5><i class="fa-solid fa-bars"></i></h5>
+        </div>
+    </nav>
+</body>
+</html>
