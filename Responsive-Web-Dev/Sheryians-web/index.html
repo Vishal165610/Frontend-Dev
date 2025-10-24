@@ -4,39 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Kodr | Sheryians</title>
+    <title>Sheryians Coding School | Learn Coding in India</title>
+    <link rel="icon" type="image/png" href="./assets/favicon-96x96.png" sizes="96x96" />
 
     <style>
 
         @font-face {
             font-family: neumac-regular;
-            src: url(NeueMachina-Regular_DQCmjH1st\ \(1\).ttf);
+            src: url(./fonts/NeueMachina-Regular_DQCmjH1st\ \(1\).ttf);
         }
         
          @font-face {
             font-family: neumac;
-            src: url(NeueMachina-Light_gwWCZxVuQl.ttf);
+            src: url(./fonts/NeueMachina-Light_gwWCZxVuQl.ttf);
         }
 
         @font-face{
             font-family: gilory-extrabold;
-            src: url(Gilroy-Extrabold_YC6oQDa3Ix.ttf)
+            src: url(./fonts/Gilroy-Extrabold_YC6oQDa3Ix.ttf)
         }
 
         @font-face {
             font-family: gilory-medium;
-            src: url(Gilroy-Medium_eHDK2RllDd.ttf);
+            src: url(./fonts/Gilroy-Medium_eHDK2RllDd.ttf);
         }
 
         @font-face {
             font-family: gilory-bold;
-            src: url(Gilroy-Bold_JK4cTGJOE.ttf);
+            src: url(./fonts/Gilroy-Bold_JK4cTGJOE.ttf);
+        }
+
+
+        @font-face {
+            font-family: helv-light;
+            src: url(./fonts/HelveticaNowDisplay-Light_M4nzWhve6k_k7HolyzL10.woff2);
+        }
+
+        @font-face{
+            font-family: helv-regular;
+            src: url(./fonts/HelveticaNowDisplay-Regular_5Mzhp8KlA8_CAVTbnsPOM.woff2);
         }
 
         @font-face {
-            font-family: Helv;
-            src: url(HelveticaNowDisplay-Medium_2wEhlmo-TD.ttf);
+            font-family: helv-med;
+            src: url(./fonts/HelveticaNowDisplay-Medium_2wEhlmo-TD.ttf);
         }
+        @font-face {
+            font-family: juana;
+            src: url(./fonts/Fontspring-DEMO-juana-extralightit_toKzXEsfr.ttf);
+        }
+
+        @font-face{
+            font-family: neumac-bold;
+            src: url(./fonts/NeueMachina-Bold_WaMOsLX9Z9.ttf);
+        }
+
+
 
         :root{
             --green: #24cfa6;
@@ -47,12 +70,23 @@
             --gray: #353535;
         }
 
-       
         *{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            background-color: var(--bg);
+        }
+
+        body{
+            background-image: url(./assets/download.svg);
+        }
+
+        :root{
+            --green: #24cfa6;
+            --green-light: #02e797;
+            --green-dark: #009560;
+            --bg: #0c0c0c;
+            --fontcolor: #e9e9e9;
+            --gray: #353535;
         }
 
         nav{
@@ -69,7 +103,7 @@
             gap: 15px;
             margin-top: 2px;
             font-family: "neumac";
-            font-size: 15px;
+            font-size: 15.6px;
             font-weight: 200;
         }
 
@@ -78,17 +112,15 @@
             font-weight: 100;
         }
         .nav1 img{
-            width: 35px;
-            
+            width: 35px;  
         }
 
         .nav2{
             display: flex;
             align-items: center;
-            gap: 40px;
-            
-            font-size: 15px;
-            font-weight: 200;
+            gap: 45px;
+            font-size: 14px;
+            font-weight: 100;
         }
 
         .nav2 h4{
@@ -96,11 +128,18 @@
             font-weight: 100;
         }
 
+        .highlighted{
+            font-family: neumac-bold;
+            font-size: 17px;
+        }
+
         .nav2 button{
             background-color: var(--green);
             color: black;
-            padding: 9px 25px;
+            padding: 8.8px 26.4px;
             border: none;
+            font-family: helv-regular;
+            font-weight: 300;
             font-size: 15px;
             border-radius: 5px;
         }
@@ -127,207 +166,448 @@
             }
         }
 
-        .section1{
-            display: flex;
-            flex-direction: row;
-        }
+    .section1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
 
-        .left{
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            color: white;
-            padding: 20px 88px;
-            
-        }
+    .section1 .middle h1{
+        color: white;
+        max-width: 100%;
+        text-align: center;
+        font-size: 79.2px;
+        margin-top: 100px;
+        font-family: neumac;
+        font-weight: 100;
+        line-height: 70px;
+    }
 
-        .left .Heading h1{
-            font-size: 49px;
-            font-family: helv;
-            max-width: 94%;
+    .text-highlight{
+        color: #02e797;
+    }
+
+    .section1 .middle .different{
+        font-family: juana;
+    }
+
+    .redirect{
+        color: Black;
+        position: relative;
+        text-decoration: none;
+        top: 65px;
+        font-family: helv-regular;
+        font-size: 20px;
+        padding: 11.8px 38px;
+        border-radius: 7px;
+        background-color: #24cfa6;
+    }
+
+    .right-para{
+        max-width: 215px;
+        text-align: left;
+        font-family: helv-regular;
+        color: rgb(212, 212, 212);
+        position: relative;
+        font-size: 14.20px;
+        line-height: 15px;
+        font-weight: 100;
+        right: -450px;
+        top: -20px;
+    }
+
+    .taught{
+        display: flex;
+        align-items: center;
+        color: white;
+        margin-top: 130px;
+    }
+
+    .stats{
+        padding: 10px 50px;
+    }
+
+    .number{
+        font-family: helv-regular;
+        font-size: 30px;
+    }
+
+    .count{
+        font-family: neumac;
+        font-size: 20px;
+    }
+
+    @media (max-width: 700px) {
+
+        .section1 .middle h1{
+            font-size: 50px;
             line-height: 50px;
-            color: var(--fontcolor);
+            margin-top: 150px;
         }
 
-        .left .Starts-on{
-            display: flex;
-            margin-top: 25px;
-            align-items: center;
-            background: var(--gray);
-            padding: 10px 15px;
-            width: 238px;
-            gap: 10px;
-            border-radius: 4px;
+        .redirect{
+            top: 50px;
+            font-size: 20px;
+            padding: 10px 26px;
         }
 
-        .left .Starts-on h4{
-            font-family: helv;
-            font-weight: 100;
-            background: none;
+        .right-para{
+            display: none;
+        }
+
+        .taught{
+            flex-direction: row;
+            gap: 20px;
+            margin-top: 180px;
+        }
+
+        .number{
+            font-size: 22px;
+        }
+
+        .stats{
+            padding: 10px 20px;
+        }
+
+        .count{
+            font-size: 16px;
+        }
+
+    }
+
+    @media (max-width: 500px) {
+
+        .section1 .middle h1{
+            font-size: 35px;
+            line-height: 40px;
+            margin-top: 120px;
+        }
+
+        .redirect{
+            top: 40px;
+            font-size: 16px;
+            padding: 8px 20px;
+        }
+
+        .taught{
+            flex-direction: row;
+            gap: 30px;
+            margin-top: 100px;
+           
+        }
+
+        .number{
+            font-size: 18px;
+        }
+
+        .stats{
+            padding: 5px 0px;
+        }
+
+        .count{
             font-size: 14px;
         }
 
-        .left .Starts-on img{
-            background: none;
-            width: 20px
-        }
+    }
 
-        .Money{
-            font-size:35px;
-            margin-top: 38px;
-            font-family: helv;
-            max-width: 600px;
-            font-weight: 500;
-        }
+    .section2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 150px;
+    }
 
-        .Money p{
-            display: inline-block;
-            font-family: gilory-bold;
-            color: var(--fontcolor);
-        }
-
-        .price{
-            font-size: 29.05px;
-            font-family: gilory-extrabold;
-            color: var(--green-light);
-        }
-
-        .discount{
-            font-size: 15.75px;
-            font-family: gilory-medium;
-            color: var(--fontcolor);
-        }
-
-        .Register{
-            background-color: var(--green-dark);
-            margin-top: 30px;
-            font-family: gilory-extrabold;
-            font-size: 21px;
-            padding: 16.8px 25.2px;
-            color: white;
-            border: none;
-            border-radius: 4.3px;
-        }
-
-        .right {
-            max-width: 800px;
-            padding: 20px 80px 20px 0px;
-        }
-
-        .right img {
-            width: 100%;
-            border-radius: 20px;
-            display: block;
-            overflow: hidden;
-        }
+    .top{
+        font-size: 20px;
+        line-height: 40px;
+        font-family: neumac;
+        color: white;
+        margin-bottom: 80px;
         
-        @media (max-width: 900px) {
-            .section1{
-                flex-direction: column-reverse;
-            }
+    }
 
-            .right{
-                padding: 0px 20px 20px 20px;
-            }
+    .green{
+        color: var(--green);
+    }
 
-            .left{
-                padding: 20px 20px;
-            }
+    .video iframe{
+        border-radius: 20px;
+    }
 
-            .left .Heading h1{
-                font-size: 32px;
-                line-height: 40px;
-            } 
+    .bottom-button{
+        margin-top: 60px;
+        margin-bottom: 150px;
+        
+    }
+
+    .explore{
+        background-color: var(--green);
+        color: black;
+        padding: 12px 40px;
+        border: none;
+        font-family: helv-regular;
+        font-weight: 300;
+        font-size: 20px;
+        border-radius: 7px;
+    }
+
+    @media (max-width: 900px) {
+
+        .video iframe{
+            width: 700px;
+            height: 400px;
         }
 
-        @media (max-width: 750px) {
-            .Money {
-                font-size: 28px;
-            }
-            .Money .price {
-                font-size: 24px;
-            }
-            .Money .discount {
-                font-size: 14px;
-            }
-            .Register {
-                font-size: 18px;
-                padding: 14px 22px;
-            }
-        }
+    }
 
-        @media (max-width: 600px) {
-            .Money {
-                font-size: 24px;
-            }
-            .Money .price {
-                font-size: 20px;
-            }
-            .Money .discount {
-                font-size: 13px;
-            }
-            .Register {
-                font-size: 16px;
-                padding: 12px 20px;
-            }
-        }
-
-        @media (max-width: 450px) {
-            .Money {
-                font-size: 20px;
-            }
-            .Money .price {
-                font-size: 17px;
-            }
-            .Money .discount {
-                font-size: 12px;
-            }
-            .Register {
-                font-size: 14px;
-                padding: 10px 18px;
-            }
-        }
+    @media (max-width: 700px) {
 
         .section2{
-            font-size: 40px;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 100px;
+            margin-bottom: 80px;
         }
 
-        .section2 h1{
-            background-image: url(thumbnail.webp);
-            background-size: cover;
-            background-clip: text;
-            position: relative;
-            color: transparent;
+        .section2 .top{
+            font-size: 18px;
+            line-height: 35px;
+            margin-bottom: 60px;
+            width: 500px
         }
 
-        .section2 h1.bloom{
-            position: absolute;
-            filter: blur(100px);
+        .video iframe{
+            width: 450px;
+            height: 300px;
         }
 
+        .explore{
+            padding: 10px 26px;
+            font-size: 16px;
+        }
+    
 
+    }
 
+      @media (max-width: 500px) {
+
+        .section2 .top{
+            font-size: 10px;
+            line-height: 30px;
+            margin-bottom: 40px;
+            width: 450px;
+        }
+
+        .video iframe{
+            width: 350px;
+            height: 200px;
+        }
+
+        .explore{
+            padding: 10px 26px;
+            font-size: 16px;
+        }
+
+    }
+
+    .section3{
+        display: flex;
+        padding: 15px 76px;
+        flex-direction: column;
+    }
+
+    .Heading-3{
+        color: white;
+        font-family: neumac;
+        letter-spacing: 2.5px;
+        font-weight: lighter;
+        font-size: 20px;
+        margin-bottom: 62px;
+    }
+
+    .courses-1{
+        display: flex;
+        gap: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        flex-direction: column;
+    }
+
+    .course-wrap{
+        height: 475.138px;
+        width: 330.362px;
+        background-color: #171717;
+        border-radius: 16px;
+    }
+
+    .course-img img{
+        width: 100%;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+        border-radius: none;
+        opacity: 0.7;
+    }
+
+    .course-subtags{
+        color: black;
+        font-family: helv-regular;
+        background-color: white;
+        width: 10%;
+        text-align: center;
+        border-radius: 6px;
+        padding: 4.5px 8px;
+        font-size: 10px;
+        font-weight: bold;
+        position: relative;
+        top: -177px;
+        left: 285px;
+        opacity: 0.5;
+    }
+
+    .coming-sn{
+        position: absolute;
+        width: 300px;
+    }
+
+    .coming-sn p{
+        color: white;
+        font-family: neumac;
+        width: 65%;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 7px;
+        font-size: 21px;
+        font-weight: 200;
+        position: relative;
+        top: -135px;
+        left: 70px;
         
+    }
+
+    .course-name-1{
+        font-size: 23px;
+        color: white;
+        font-family: helv-regular;
+        margin-top: 0;
+        padding: 0px 22px;
+        font-weight: 100;
+        flex-wrap: nowrap;
+    }
+
+    .tags-1{
+        width: 400px;
+        gap: 0px;
+        margin-bottom: 80px;
+        display: flex;
+
+    }
+
+    .tags-1 h4{
+        font-size: 16px;
+        color: white;
+        background-color: #2c2c2c;
+        font-family: helv-light;
+        width: 30%;
+        text-align: center;
+        margin-left: 10px;
+        margin-top: 15px;
+        padding: 6px 10px;
+        border-radius: 4px;
+    }
+
+    .tags-1 .Live-batch{
+        color: black;
+        background-color: red;
+        font-family: helv-light;
+        width: 30%;
+        text-align: center;
+        margin-top: 15px;
+        padding: 6px 10px;
+        border-radius: 4px;
+        margin-left: 23px;
+    }
+
+    .bottom-3{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        
+    }
+
+    .left-bottom{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        font-family: helv-regular;
+        
+    }
+
+    .left-bottom span{
+        font-size: 15px;
+        color: #1ea57f;
+        margin-bottom: -10px;
+    }
+
+    .left-bottom div{
+        display: flex;
+        margin-top: 10px;
+    }
+
+    .left-bottom div p{
+        font-size: 25px;
+        margin-top: 0;
+    }
+
+    .left-bottom div small{
+        font-size: 18px;
+        color : gray;
+        text-decoration: line-through;
+        margin-top: 6px;
+        margin-left: 8px;
+    }
+
+    .right-bottom p{
+        font-size: 13px;
+        background-color: white;
+        margin-right: 20px;
+        padding: 4px 10px;
+        font-family: helv-regular;
+        border-radius: 7px;
+    }
+
+    .coming-soon{
+        font-family: helv-regular;
+        background-color: #9e9e9e;
+        color: black;
+        font-size: 20px;
+        padding: 10px 103.5px ;
+        border: 1px solid #353535;
+        border-radius: 10px;
+        margin-top: -8px;
+    }
+
+    .slots{
+        display: flex;
+        justify-content: space-between;
+    }
+
     </style>
 </head>
 <body>
-    
+
     <nav>
         <div class="nav1">
-            <img src="sheryians-logo.webp" alt="">
+            <img src="./assets/sheryians-logo.webp" alt="">
             <h4>Sheryians <br>coding school</h4>
         </div>
         <div class="nav2">
             <h4>Home</h4>
             <h4>Courses</h4>
-            <h4>Kodr 3.0</h4>
-            <h4>Kodex</h4>
+            <h4 class="highlighted">Kodr 3.0</h4>
+            <h4 class="highlighted">Kodex</h4>
             <h4>Request Callback</h4>
             <button>Sign In</button>
         </div>
@@ -339,49 +619,294 @@
     </nav>
 
     <section class="section1">
-        <div class="left">
-
-            <div class="Heading">
-                <h1>100 Days In-House Bootcamp Programme - Kodr.</h1>
-            </div>
-
-            <div class="Starts-on">
-                <h4>Starts on: 3 November 2025</h4>
-                <img src="btick.webp" alt="">
-            </div>
-
-            <div class="Money">
-                <p>Fee</p>
-                <span class="price">
-                    ₹ 82599
+        <div class="middle">
+            <h1>
+                <span>We only
+                    <span class="text-highlight"> teach</span>
+                    <br>
+                    what we are really
+                    <br>
+                    really
+                    <span class="different">good</span>
+                    at.
                 </span>
-                <span class="discount">
-                    [ 69999 + 18% GST ]
-                </span>
-            </div>
+            </h1>
 
-            <div class="cta">
-                <button class="Register">
-                    Register Now
-                </button>
-            </div>
-
+            <a class="redirect" href="#">
+                Check Courses-Make an Impact
+            </a>
         </div>
 
-        <div class="right">
-            
-            <div class="Thumbanil-container">
-                <img class="thumbnail" src="thumbnail.webp" alt="">
+        <div class="right-para">
+            Get ready at
+            <span class="text-highlight">accelerate your career</span>
+            with customized courses and leave your mark in the tech industry
+        </div>
+
+        <div class="bottom">
+            <div class="taught">
+
+                <div class="stats">
+                <div class="number">
+                    250k+
+                </div>
+                <div class="count">Students taught</div>
+                </div>
+
+                <div class="stats">
+                <div class="number">
+                    20+
+                </div>
+                <div class="count">Instructors</div>
+                </div>
+
+                <div class="stats">
+                <div class="number">
+                    594K+
+                </div>
+                <div class="count">Youtube Subs.</div>
+                </div>
+
+                
             </div>
         </div>
     </section>
 
     <section class="section2">
+        <div class="top">
+            <h1>we do whatever it takes to help you</h1>
+            <h1 class="green">understand the concepts</h1>
+        </div>
 
-        <div>
-            <h1 class="bloom">Get Placed.</h1>
-            <h1>Get Placed.</h1>
+        <div class="video">
+            <iframe width="952" height="535" src="https://www.youtube.com/embed/60SRAWmMXyc" title="You Are Not Yet Ready | Placements | Open Source" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="bottom-button">
+            <button class="explore">
+                Explore Free learning
+            </button>
         </div>
     </section>
+
+    <section class="section3">
+        <div class="Heading-3">
+            <h1 class="we-offers">Courses Offered.</h1>
+        </div>
+
+        <div class="slots">
+
+    <div class="courses-1">
+            <div class="course-wrap">
+                <div class="course-top">
+
+                <div class="course-img"> <!-- img -->
+                    <img src="https://ik.imagekit.io/sheryians/courses_gif/undefined-ai-web-thumb-v7_Ois5c2bkq.jpeg" alt="img">
+                </div>
+
+                <div class="course-subtags">
+                    <p>AI</p>
+                </div>
+
+
+                </div>
+                <div class="course-details">
+
+                    <div class="course-name-1">
+                    <p>Data Science and Analytics with GenAI</p>
+                    </div>
+
+                    <div class="tags-1">
+                        <h4>HINGLISH</h4>
+                    </div>
+
+                    <div class="bottom-3">
+                        <div class="left-bottom">
+                            <span>Limited Time Discount</span>
+                            <div>
+                                <p>₹ 6999</p>
+                                <small>₹ 12999</small>
+                            </div>
+                        </div>
+
+                        <div class="right-bottom">
+                            <p>
+                                46% OFF
+                            </p>
+                        </div>
+                    </div>
+
+                </div coming soon>
+
+                
+            </div>
+
+            <div class="coming-soon-cntner">
+                        <button class="coming-soon">
+                            Coming Soon
+                        </button>
+                </div>
+        </div>
+
+        <div class="courses-1">
+            <div class="course-wrap">
+                <div class="course-top">
+
+                <div class="course-img"> <!-- img -->
+                    <img src="https://ik.imagekit.io/sheryians/Cohort%202.0/cohort-3_ekZjBiRzc-2_76HU4-Mz5z.jpeg?updatedAt=1757741949621" alt="img">
+                </div>
+
+                <div class="course-subtags">
+                    <p>JOB READY</p>
+                </div>
+
+                </div>
+                <div class="course-details">
+
+                    <div class="course-name-1">
+                    <p>2.0 Job Ready AI Powered Cohort: Web + DSA + Aptitude</p>
+                    </div>
+
+                    <div class="tags-1">
+                        <p class="Live-batch">LIVE BATCH</p>
+                        <h4>HINGLISH</h4>
+                    </div>
+
+                    <div class="bottom-3">
+                        <div class="left-bottom">
+                            <span>Earlt Bird Discount</span>
+                            <div>
+                                <p>₹ 5999 </p>
+                                <small>₹ 12999</small>
+                            </div>
+                        </div>
+
+                        <div class="right-bottom">
+                            <p>
+                                46% OFF
+                            </p>
+                        </div>
+                    </div>
+
+                </div coming soon>
+
+                
+            </div>
+
+            <div class="coming-soon-cntner">
+                        <button class="coming-soon">
+                            Coming Soon
+                        </button>
+                </div>
+        </div>
+
+        <div class="courses-1">
+            <div class="course-wrap">
+                <div class="course-top">
+
+                <div class="course-img"> <!-- img -->
+                    <img src="https://ik.imagekit.io/sheryians/courses_gif/undefined-web-dsa-thumb-10_ZKtPNgmW_.webp_Zhu2w1to5h.jpeg" alt="img">
+                </div>
+
+                <div class="course-subtags">
+                    <p>AI</p>
+                </div>
+
+                </div>
+                <div class="course-details">
+
+                    <div class="course-name-1">
+                    <p>Data Science and Analytics with GenAI</p>
+                    </div>
+
+                    <div class="tags-1">
+                        <h4>HINGLISH</h4>
+                    </div>
+
+                    <div class="bottom-3">
+                        <div class="left-bottom">
+                            <span>Limited Time Discount</span>
+                            <div>
+                                <p>₹ 6999</p>
+                                <small>₹ 12999</small>
+                            </div>
+                        </div>
+
+                        <div class="right-bottom">
+                            <p>
+                                46% OFF
+                            </p>
+                        </div>
+                    </div>
+
+                </div coming soon>
+
+                
+            </div>
+
+            <div class="coming-soon-cntner">
+                        <button class="coming-soon">
+                            Coming Soon
+                        </button>
+                </div>
+        </div>
+
+        <div class="courses-1">
+            <div class="course-wrap">
+                <div class="course-top">
+
+                <div class="course-img"> <!-- img -->
+                    <img src="https://ik.imagekit.io/sheryians/courses_gif/undefined-IMG_5100_7vO7pODI9.JPG" alt="img">
+                </div>
+
+                <div class="course-subtags">
+                    <p>AI</p>
+                </div>
+
+                </div>
+                <div class="course-details">
+
+                    <div class="course-name-1">
+                    <p>Data Science and Analytics with GenAI</p>
+                    </div>
+
+                    <div class="tags-1">
+                        <h4>HINGLISH</h4>
+                        
+                    </div>
+
+                    <div class="bottom-3">
+                        <div class="left-bottom">
+                            <span>Limited Time Discount</span>
+                            <div>
+                                <p>₹ 6999</p>
+                                <small>₹ 12999</small>
+                            </div>
+                        </div>
+
+                        <div class="right-bottom">
+                            <p>
+                                46% OFF
+                            </p>
+                        </div>
+                    </div>
+
+                </div coming soon>
+
+                
+            </div>
+
+            <div class="coming-soon-cntner">
+                        <button class="coming-soon">
+                            Coming Soon
+                        </button>
+                </div>
+        </div>
+
+        </div>
+
+
+    </section>
+
 </body>
 </html>
